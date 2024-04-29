@@ -1,0 +1,85 @@
+.shopping{
+    width: 100%;
+    height:400px;
+    .shoppping__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 100%;
+        background-image: url(./img/paste.png);
+        background-size: 100% 100%;
+        background-position: auto;
+        background-repeat: no-repeat;
+        margin: 0 auto;      
+        .shopping__centerText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                width: 200px;
+                height: 50px;
+                li img{
+                    width: 15px;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.1rem;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: gray;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+                li:hover{
+                    color: black;
+                }
+            }
+            h2{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 58px;
+                font-weight: 500;
+            }
+            p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 24px;
+                margin: 20px 0;
+                font-weight: 200;
+            }
+        }    
+    }
+}
+
+@media (max-width:440px){
+    .shopping{
+        max-width: 440px;
+        height: 400px;
+        .shoppping__container{
+            width: 85%;
+            height: 100%;
+            margin: 0 auto;
+            .shopping__centerText{
+                ul{
+                    li img{
+                        width: 20px;
+                    }
+                    li{
+                        font-size: 18px;
+                    }
+                }
+                h2{
+                    font-size: 42px;
+                }
+                p{
+                    font-size: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.one__container{
+    max-width: 1550px;
+    height: 100vh;
+    margin: 0 auto;
+}
